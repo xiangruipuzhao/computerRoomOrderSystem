@@ -1,5 +1,5 @@
 #include "orderFile.h"
-//���캯��
+//构造函数
 OrderFile::OrderFile()
 {
 	ifstream ifs;
@@ -11,6 +11,7 @@ OrderFile::OrderFile()
 	string roomId;
 	string status;
 	this->m_Size = 0;
+	//将读到的数据进行切分并存入字典
 	while (ifs >> date && ifs >> interval && ifs >> stuId && ifs >> stuName && ifs >> roomId && ifs >> status)
 	{
 		/*cout << date << endl;
@@ -64,8 +65,8 @@ OrderFile::OrderFile()
 			value = status.substr(pos + 1, status.size() - pos - 1);
 			mp.insert(make_pair(key, value));
 		}
-		this->m_OrderData.insert(make_pair(this->m_Size, mp));
-		this->m_Size++;
+		this->m_OrderData.insert(make_pair(this->m_Size, mp));//将一条数据插入大的容器中
+		this->m_Size++;//容器中的条数增加
 		/*cout << "date=" << key << endl;
 		cout << "value=" << value << endl;*/
 
@@ -74,7 +75,7 @@ OrderFile::OrderFile()
 	ifs.close();
 		/*for (map<int, map<string,string>>::iterator it = this->m_OrderData.begin(); it != this->m_OrderData.end(); it++)
 		{
-			cout << "��¼����Ϊ��" << it->first << endl;
+			cout << "记录条数为：" << it->first << endl;
 			for (map<string, string>::iterator mit = it->second.begin(); mit != it->second.end(); mit++)
 			{
 				cout << "key = " << mit->first << " value = " << mit->second << " ";
@@ -83,7 +84,7 @@ OrderFile::OrderFile()
 		}*/
 
 }
-//����ԤԼ��¼
+//更新预约记录
 void OrderFile ::updateOrder()
 {
 	if (this->m_Size == 0)
@@ -91,7 +92,7 @@ void OrderFile ::updateOrder()
 		return;
 	}
 	ofstream ofs;
-	ofs.open(ORDER_FILE, ios::out | ios::trunc);
+	ofs.open(ORDER_FILE, ios::out | ios::trunc);//采用覆盖的方法更新文件
 	for (int i = 0; i < this->m_Size; i++)
 	{
 		ofs << "date:" << this->m_OrderData[i]["date"] << " ";
