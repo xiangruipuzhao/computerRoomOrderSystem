@@ -5,9 +5,10 @@ using namespace std;
 class Identity
 {
 public:
+        //瀹氫箟绾櫄鍑芥暟
 	virtual void operMenu() = 0;
-	//用户名
+	//脫脙禄搂脙没
 	string m_Name;
-	//用户密码
+	//脫脙禄搂脙脺脗毛
 	string m_Password;
 };
