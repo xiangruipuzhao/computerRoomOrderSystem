@@ -1,14 +1,14 @@
 #pragma once
 
-//¹ÜÀíÔ±ÎÄ¼ş
+//ç®¡ç†å‘˜æ–‡ä»¶å®šä¹‰
 #define ADMIN_FILE "admin.txt"
-//½ÌÊ¦ÎÄ¼ş
+//æ•™å¸ˆæ–‡ä»¶
 #define TEACHER_FILE "teacher.txt"
-//Ñ§ÉúÎÄ¼ş
+//å­¦ç”Ÿæ–‡ä»¶
 #define STUDENT_FILE "student.txt"
-//»ú·¿ĞÅÏ¢ÎÄ¼ş
+//æœºæˆ¿ä¿¡æ¯æ–‡ä»¶
 #define COMPUTER_FILE "computerRoom.txt"
-//¶©µ¥ÎÄ¼ş
+//è®¢å•æ–‡ä»¶
 #define ORDER_FILE "order.txt"
 
 
