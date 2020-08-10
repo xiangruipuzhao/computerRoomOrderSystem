@@ -100,6 +100,7 @@ void Manager::addAccount()
 	this->initVec();//使得容器能够及时被更新
 }
 //初始化容器
+//将数据读入相应的数据容器中
 void Manager::initVec()
 {
 	this->vStu.clear();
