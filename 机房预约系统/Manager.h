@@ -10,29 +10,29 @@
 class Manager :public Identity
 {
 public:
-	//Ä¬ÈÏ¹¹Ôì
+	//é»˜è®¤æ„é€ 
 	Manager();
-	//ÓĞ²Î¹¹Ôì
+	//æœ‰å‚æ„é€ 
 	Manager(string name, string pwd);
-	//²Ëµ¥½çÃæ
+	//èœå•ç•Œé¢å®šä¹‰
 	virtual void operMenu();
-	//Ìí¼ÓÕËºÅ
+	//æ·»åŠ è´¦å·
 	void addAccount();
-	//²é¿´ÕËºÅ
+	//æŸ¥çœ‹è´¦å·
 	void checkAccount();
-	//²é¿´»ú·¿ĞÅÏ¢
+	//æŸ¥çœ‹æœºæˆ¿ä¿¡æ¯
 	void checkCmInfo();
-	//Çå¿ÕÔ¤Ô¼¼ÇÂ¼
+	//æ¸…ç©ºé¢„çº¦è®°å½•
 	void clearOrdRecord();
-	//³õÊ¼»¯ÈİÆ÷
+	//åˆå§‹åŒ–å®¹å™¨
 	void initVec();
-	//¼ì²âIDÖØ¸´
+	//æ£€æµ‹IDé‡å¤
 	bool checkRepeat(int id,int type);
-	//Ñ§ÉúÈİÆ÷
+	//å­¦ç”Ÿå®¹å™¨
 	vector<Student> vStu;
-	//ÀÏÊ¦ÈİÆ÷
+	//è€å¸ˆå®¹å™¨
 	vector<Teacher> vTea;
-	//·¿¼äÈİÆ÷
+	//æˆ¿é—´å®¹å™¨
 	vector<computerRoom> vcomR;
 
 
