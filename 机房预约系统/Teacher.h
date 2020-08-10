@@ -5,17 +5,17 @@
 class Teacher :public Identity
 {
 public:
-	//ÎŞ²Î¹¹Ôì
+	//æ— å‚æ„é€ å‡½æ•°
 	Teacher();
-	//ÓĞ²Î¹¹Ôì
+	//æœ‰å‚æ„é€ 
 	Teacher(int empId, string name, string pwd);
-	//²Ëµ¥½çÃæ
+	//èœå•ç•Œé¢
 	virtual void operMenu();
-	//²é¿´Ô¤Ô¼
+	//æŸ¥çœ‹é¢„çº¦
 	void checkAllOrder();
-	//ÉóºËÔ¤Ô¼
+	//å®¡æ ¸é¢„çº¦
 	void validOrder();
-	//Ö°¹¤ºÅ
+	//èŒå·¥å·
 	int m_EmpId;
 
 };
