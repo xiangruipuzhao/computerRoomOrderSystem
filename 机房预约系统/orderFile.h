@@ -8,13 +8,13 @@ using namespace std;
 class OrderFile
 {
 public:
-	//¹¹Ôìº¯Êı
+	//æ„é€ å‡½æ•°
 	OrderFile();
-	//¸üĞÂÔ¤Ô¼¼ÇÂ¼
+	//æ›´æ–°é¢„çº¦è®°å½•
 	void updateOrder();
-	//ÄÚÈİÌõÊı
+	//å†…å®¹æ¡æ•°
 	int m_Size;
-	//ÈİÆ÷
+	//è®¢å•å®¹å™¨
 	map<int, map<string, string>> m_OrderData;
 };
 
