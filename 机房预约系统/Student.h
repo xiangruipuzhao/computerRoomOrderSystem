@@ -25,7 +25,7 @@ public:
 	void cancleOwnOrder();
 	//房间容器
 	vector<computerRoom> vcomR;
-	int m_Id;//学生学号
+	int m_Id;//学生ID
 
 
 };
